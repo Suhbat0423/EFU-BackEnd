@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const { create } = require("./Student");
 const Schema = mongoose.Schema;
 
 const AchievementSchema = new Schema({
@@ -10,3 +9,5 @@ const AchievementSchema = new Schema({
   verified: { type: Boolean, default: false },
   createdAt: { type: Date, default: Date.now },
 });
+
+module.exports = mongoose.model("Achievement", AchievementSchema);

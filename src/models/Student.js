@@ -19,7 +19,7 @@ const StudentSchema = new Schema({
 
   class: {
     type: String,
-    required: true,
+    required: false,
     enum: [
       "Аялал жуулчлал",
       "Нийгмийн инноваци",
